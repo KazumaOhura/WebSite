@@ -10,25 +10,44 @@
 
 <body>
 
-    <div class="container">
-    <header id="menu">
-        <ul>
-            <li>メニュー１</li>
-            <li>メニュー２</li>
-            <li>メニュー３</li>
-        </ul>
-    </header>
+    <div class="wrapper">
+        <header>
+            <ul class="menu">
+                <li class="menu_item"><input type="button" value="メニュー1"></li>
+                <li class="menu_item"><input type="button" value="メニュー2"></li>
+                <li class="menu_item"><input type="button" value="メニュー3"></li>
+            </ul>
+        </header>
 
-    <h1 class="title">タイトル</h1>
-    <p class="content">コンテンツ</p>
-    <h1 class="title">タイトル</h1>
-    <p class="content">コンテンツ</p>
-    <h2 class="title">タイトル</h2>
-    <p class="content">コンテンツ</p>
+        <div class="container">
+            <span class="contentsBlock">
+                <span class="headLine_star"></span>
+                <span class="contents">
+                <h1 class="contents_title">タイトル</h1>
+                <p class="contents_item">コンテンツ</p>
+                </span>
+            </span>
+            <span class="contentsBlock">
+                <span class="headLine_star"></span>
+                <span class="contents">
+                <h1 class="contents_title">タイトル</h1>
+                <p class="contents_item">コンテンツ</p>
+                </span>
+            </span>
+            <span class="contentsBlock">
+                <span class="headLine_triangle"></span>
+                <span class="contents">
+                <h2 class="contents_itle">タイトル</h2>
+                <p class="contents_item">コンテンツ</p>
+                </span>
+            </span>
 
-    <input id="goTop" type="button" value="TOP"></input>
+        <input id="toTop" type="button" value="TOP" onclick="window.scroll(0,0);"></input>
+        </div> 
 
-    </div> 
+        <!-- <fotter>コピーライト</fotter> -->
+
+    </div>
 
 </body>
 

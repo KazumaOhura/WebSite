@@ -1,9 +1,15 @@
 var correctionBorder = (element) =>{
     widthelement.style.
 
-    return;
 }
 
-var main = () =>{
+/*
+var goTop = () =>{
+    let element = document.getElementById("goTop");
+
+    if(element.onclick()){
+        window.scroll(0, 0);
+    }
 
 }
+*/

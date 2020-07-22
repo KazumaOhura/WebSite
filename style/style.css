@@ -1,39 +1,102 @@
 
 body {
-    background: linear-gradient( red, white);
+    background: linear-gradient( red, purple, blue);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    min-height: 100vh;
+    min-width: auto;
 }
 
-.container {
-
+.wrapper{
+    display: flex;
+    max-width:75vw;
+    margin:0 auto;
 }
 
-#menu {
+header {
     position: fixed;
     display:inline-block;
-    background-color: rgba(127,255,212,50%);
-    left:50%;
-    transform: translateX(-50%);
+    background-color: rgba(127,255,212,75%);
+    width: 75%;
 }
 
-#menu > ul {
-    display:inline-block;
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin:1em 0em;
+}
+
+.menu_item {
+    border-radius: 10%;
+    margin: 0em 1em;
     list-style: none;
 }
 
-#menu > ul > li {
-    display: inline-block;
-    vertical-align: middle;
+.menu_item > input{
     background-color: green;
+    padding: 1em 2em;
     border-radius: 10%;
-    padding:2em;
+    border-style: none;
+    box-shadow: 2px 2px 3px 1px gray;
+    outline:none;
 }
 
-#goTop{
+#menu > span > input:hover{
+    background-color: aquamarine;
+}
+
+.container {
+    position: relative;
+    display: inline-block;
+    width:100%;
+    margin:4em 0%;
+}
+
+.contentsBlock {
+    display: block;
+    width:inherit;
+
+}
+
+.headLine_star {
+    position:relative;
+    background-color: aqua;
+    width: 100px; height: 100px;
+    transform:rotateX(45deg);
+    
+}
+
+.headLine_triangle{
+    position: relative;
+    width:0px; height:0px;
+    background:transparent;
+    border-bottom:40px solid aquamarine;
+    border-left:25px solid transparent;
+    border-right:25px solid transparent;
+
+}
+
+.contents {
+    display: block;
+}
+
+.contents_title {
+
+}
+
+.contents_item {
+
+}
+
+#toTop{
     position:fixed;
     display: inline-block;
     background-color:skyblue;
     border-style: none;
-    left:90vw; top:90vh;
+    text-align: right;
+    top:90%;
     padding:2em;
     border-radius: 50%;
     box-shadow: 5px 5px 2px 1px gray;
